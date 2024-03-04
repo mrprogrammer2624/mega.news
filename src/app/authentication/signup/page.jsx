@@ -5,9 +5,7 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import axios from "axios";
 import clsx from "clsx";
-
-import { Button } from "@/components/Button";
-import { Loading } from "@/components/Loading";
+import { Button, Loading } from "@/components";
 
 const SignUpForm = () => {
   const router = useRouter();

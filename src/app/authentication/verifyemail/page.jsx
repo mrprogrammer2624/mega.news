@@ -1,7 +1,7 @@
 "use client";
-
-import { Button } from "@/components/Button";
+import { Button } from "@/components";
 import axios from "axios";
+import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 
@@ -31,7 +31,6 @@ const VerifyEmail = () => {
     if (token.length > 0) {
       verifyUserEmail();
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [token]);
 
   return (
