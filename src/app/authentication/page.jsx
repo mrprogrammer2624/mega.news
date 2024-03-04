@@ -1,6 +1,7 @@
 "use client";
-import { Button } from "@/components";
-import { Icons, authenticationButton } from "@/utility";
+
+import { Button } from "@/components/Button";
+import { authenticationButton } from "@/utility";
 import clsx from "clsx";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
