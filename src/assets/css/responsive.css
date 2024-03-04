@@ -1,0 +1,23 @@
+:root {
+  --img-ratio: 100%;
+  --rem: 10px;
+}
+
+@media (min-width:1199px) {
+  :root {
+    --rem: 16px;
+  }
+}
+
+/* 
+@media only screen and (max-width: 1799px) {}
+@media only screen and (max-width: 1599px) {}
+@media only screen and (max-width: 1439px) {} big
+@media only screen and (max-width: 1365px) {} xxxl
+@media only screen and (max-width: 1279px) {} xxl
+@media only screen and (max-width: 1199px) {} xl
+@media only screen and (max-width: 991px) {} xlg
+@media only screen and (max-width: 767px) {} lg
+@media only screen and (max-width: 575px) {} mg
+@media only screen and (max-width: 480px) {} sm
+@media only screen and (max-width: 350px) {} small */
