@@ -1,33 +1,198 @@
+@import "../assets/css/fonts.css";
+@import '../assets/css/responsive.css';
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+@layer components {
+  .style-guide-wrapper {
+    @apply flex justify-center items-center gap-8 p-5 mb-4 border border-solid border-primary;
+  }
+
+  .btn {
+    @apply inline-flex items-center justify-center text-center text-xl gap-3 font-medium leading-5 capitalize py-4 px-8 rounded-xl transition-all ease-in-out duration-150 disabled:text-gray-75 disabled:pointer-events-none;
+  }
+
+  .btn-primary {
+    @apply bg-primary-75 text-white hover:bg-primary disabled:bg-gray;
+  }
+
+  .btn-secondary {
+    @apply bg-transparent border-tinge border-solid border hover:border-primary hover:bg-primary-10 hover:text-primary disabled:bg-transparent;
+  }
+
+  .btn-third {
+    @apply bg-gray border border-transparent border-solid hover:bg-transparent hover:border-gray py-3 px-6
+  }
+
+  .btn-third-small {
+    @apply bg-gray p-2
+  }
+
+  .form-input {
+    @apply bg-gray p-4 outline-0 rounded-xl text-s border border-solid border-transparent text-dark min-h-[48px] w-full hover:border-tinge;
+  }
+
+  .icon-label {
+    @apply p-2 rounded-xl
+  }
+
+  .title {
+    @apply font-normal leading-6 tracking-[0.15px]
+  }
+
+  .title {
+    @apply font-medium leading-6 tracking-[0.1px]
+  }
+
+  .style-color-circle {
+    @apply w-28 h-28 rounded-full justify-center items-center flex text-white
+  }
+
+  .ratio {
+    @apply before:block before:pb-[100%] relative w-full
+  }
+
+  .ratio img {
+    @apply absolute h-full w-full top-0 left-0 object-cover
+  }
+
+  .FooterExtraContainer {
+    @apply relative before:-z-20 before:absolute before:w-2/5 before:bg-gray before:top-0 before:right-full before:translate-x-2/4 before:h-full
+  }
+
+  .section-mb {
+    @apply mb-16
+  }
+
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+@layer base {
+  html {
+    font-family: theme('fontFamily.sans'), system-ui;
+    color: theme('colors.black');
+    font-size: var(--rem);
+  }
+
+  .container {
+    margin: 0 auto;
+    max-width: 94.5rem !important;
+    padding: 0 12px;
+  }
+
+  h1,
+  .h1 {
+    @apply text-7xl;
+  }
+
+  h2,
+  .h2 {
+    @apply text-6xl;
+  }
+
+  h3,
+  .h3 {
+    @apply text-5xl;
+  }
+
+  h4,
+  .h4 {
+    @apply text-4xl;
+  }
+
+  h5,
+  .h5 {
+    @apply text-2xl;
+  }
+
+  h6,
+  .h6 {
+    @apply text-s;
+  }
+
+  h5.xl,
+  .h5.xl {
+    @apply text-xl
+  }
+
+  p,
+  .p {
+    @apply text-3xl
+  }
+
+  .p.small,
+  p.small {
+    @apply text-small
+  }
+
+  .base {
+    @apply text-base
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.authentication-bg {
+  background-image: url(../assets/img/background/authentication-background.png);
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+.mainHasTag {
+  --img-ratio: 28%;
+}
+
+.no-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.grid-categories-four {
+  grid-area: 1 / 4 / 3 / 5;
+}
+
+.hm-spinner {
+  height: 115px;
+  width: 115px;
+  border: 6px solid transparent;
+  border-top-color: #9C27B0;
+  border-bottom-color: #9C27B0;
+  border-radius: 50%;
+  position: relative;
+  -webkit-animation: spin 3s linear infinite;
+  animation: spin 3s linear infinite;
+}
+
+.hm-spinner::before {
+  content: "";
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  bottom: 20px;
+  left: 20px;
+  border: 6px solid transparent;
+  border-top-color: #BA68C8;
+  border-bottom-color: #BA68C8;
+  border-radius: 50%;
+  -webkit-animation: spin 1.5s linear infinite;
+  animation: spin 1.5s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
