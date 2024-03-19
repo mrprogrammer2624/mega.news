@@ -1,3 +1,4 @@
+"use client";
 import clsx from "clsx";
 import { RatioImages } from "../RatioImages";
 import Link from "next/link";
