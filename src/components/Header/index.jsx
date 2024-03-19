@@ -38,14 +38,14 @@ const Header = () => {
     },
   ];
 
-  const hello = async () => {
-    await axios.get("/api/users/profile");
-    console.log("Hello");
-  };
+  // const hello = async () => {
+  //   await axios.get("/api/users/profile");
+  //   console.log("Hello");
+  // };
 
-  useEffect(() => {
-    hello();
-  }, []);
+  // useEffect(() => {
+  //   hello();
+  // }, []);
 
   return (
     <header className="py-11">
