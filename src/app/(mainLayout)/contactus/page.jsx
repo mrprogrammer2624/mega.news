@@ -1,12 +1,12 @@
-import { Breadcrumb, Container, Button } from "@/components";
+import { Container, Button } from "@/components";
 import { Input, TextEditor, Upload } from "@/components/Form";
-import { BreadcrumbDemo, Icons } from "@/utility";
+import { Icons } from "@/utility";
 import React from "react";
 
 const ContactUs = () => {
   return (
     <>
-      <Breadcrumb />
+      {/* <Breadcrumb /> */}
       <section>
         <Container>
           <form>

@@ -2,7 +2,7 @@
 import { Button, Container, PostCard, Title } from "@/components";
 import { Icons, NewPostData } from "@/utility";
 
-export const NewPost = () => {
+export const NewPosts = () => {
   return (
     <section className="section-mb">
       <Container>

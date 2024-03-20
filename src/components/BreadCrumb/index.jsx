@@ -5,7 +5,7 @@ import { Container } from "@/components";
 import { usePathname } from "next/navigation";
 import { useEffect } from "react";
 
-export const Breadcrumb = () => {
+export const BreadCrumb = () => {
   let pathname = usePathname();
   useEffect(() => {
     let str = pathname;

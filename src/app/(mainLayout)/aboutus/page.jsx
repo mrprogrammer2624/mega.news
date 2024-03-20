@@ -1,13 +1,11 @@
-"use client";
-import { Breadcrumb } from "@/components";
-import { AboutContent } from "./AboutContect";
+import { AboutContent } from "./AboutContent";
 import { AboutNewsInfo } from "./AboutNewsInfo";
 import { AboutTeam } from "./AboutTeam";
 
 const AboutUs = () => {
   return (
     <>
-      <Breadcrumb />
+      {/* <Breadcrumb /> */}
       <AboutContent />
       <AboutNewsInfo />
       <AboutTeam />

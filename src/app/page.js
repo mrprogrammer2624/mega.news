@@ -4,7 +4,7 @@ import {
   HasTagPosts,
   // ClubInfo,
   LatestVideos,
-  NewPost,
+  NewPosts,
   PopularPosts,
   RecentPosts,
   TopPost,
@@ -21,7 +21,7 @@ export default function Home() {
         <RecentPosts />
         <PopularPosts />
         {/* <ClubInfo /> */}
-        <NewPost />
+        <NewPosts />
         <LatestVideos />
         {/* <TrendyPosts /> */}
         <Weather />
