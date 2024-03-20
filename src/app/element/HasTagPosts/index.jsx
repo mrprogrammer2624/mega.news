@@ -1,6 +1,6 @@
 "use client";
 import { SwiperSlide } from "swiper/react";
-import { Container, HasTag, SwiperSlider } from "@/components";
+import { Container, SwiperSlider } from "@/components";
 import { mainHasTag } from "@/utility";
 
 export const HasTagPosts = () => {
@@ -12,14 +12,14 @@ export const HasTagPosts = () => {
             <SwiperSlider slidesPerView={8} spaceBetween={20} navigation={true}>
               {mainHasTag.map((content, index) => (
                 <SwiperSlide key={index}>
-                  <HasTag
+                  {/* <HasTag
                     Image={content.image}
                     alt={content.alt}
                     toLink={`categories/${content.children}`}
                     className="w-[170px] relative flex flex-grow-0 flex-shrink-0 capitalize"
                   >
                     #{content.children}
-                  </HasTag>
+                  </HasTag> */}
                 </SwiperSlide>
               ))}
             </SwiperSlider>

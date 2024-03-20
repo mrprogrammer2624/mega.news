@@ -1,4 +1,4 @@
-export * from "./HasTag";
+// export * from "./HasTag";
 export * from "./CardSingle";
 export * from "./Container";
 export * from "./RatioImages";
