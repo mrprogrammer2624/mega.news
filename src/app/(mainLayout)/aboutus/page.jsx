@@ -8,7 +8,7 @@ const AboutUs = () => {
       {/* <Breadcrumb /> */}
       <AboutContent />
       <AboutNewsInfo />
-      <AboutTeam />
+      {/* <AboutTeam /> */}
     </>
   );
 };
