@@ -15,11 +15,9 @@ const ContactUs = () => {
               <Input isRequired label="name" type="text" />
               <Input isRequired label="email" type="email" />
               <TextEditor
+                label={"Hello"}
                 isRequired
                 parentClassName="col-span-2"
-                label="explanation"
-                col={10}
-                rows={10}
               />
               <Upload label="email" />
             </div>
